@@ -4,9 +4,11 @@ maintenabilité et la scalabilité. Voici un bref aperçu des principales classe
 leurs fonctionnalités :
 1.
 ● Fichier index.js:
+
 ● Objectif : Le fichier contient les fonctionnalités de l'application. Ce 
 fichier comprend des fonctions telles que l'analyse des expressions 
 FEEL et les fonctions du visualiseur DMN.
+
 ● Location: dist/index.js obtenir a partir du index.ts
 ● Fichier index.html:
 ● Le fichier contient la structure de la page web en HTML.
