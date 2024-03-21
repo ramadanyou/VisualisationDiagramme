@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "module": "NodeNext",
+      "target": "ES2020",
+      "sourceMap": true,
+      "outDir":"jsp",
+      "baseUrl": ".", // Required for paths
+      "paths": {
+        "https://cdn.jsdelivr.net/npm/dmn-js@15.0.0/+esm": [
+          "/types/dmn-js" // Re-map to the type
+        ]
+      }
+    },
+    "include": ["src/**/*","jsp","./types/dmn-js/index.d.ts"],
+  }

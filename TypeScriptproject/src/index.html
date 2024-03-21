@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ramadan youssouf 623310">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP7 DMN</title>
+  <link rel="stylesheet" href="https://unpkg.com/dmn-js@14.7.1/dist/assets/dmn-js-drd.css">
+<link rel="stylesheet" href="https://unpkg.com/dmn-js@14.7.1/dist/assets/dmn-js-decision-table.css">
+<link rel="stylesheet" href="https://unpkg.com/dmn-js@14.7.1/dist/assets/dmn-js-literal-expression.css">
+<link rel="stylesheet" href="https://unpkg.com/dmn-js@14.7.1/dist/assets/dmn-js-shared.css">
+<link rel="stylesheet" href="https://unpkg.com/dmn-js@14.7.1/dist/assets/dmn-font/css/dmn.css">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+  <h1>Visualisation et Expression FEEL de fichier .dmn</h1>
+<div>
+    <label>Input data for evaluation: </label>
+    <textarea id="jsonDataInput" placeholder="Enter your JSON data here..."></textarea>
+    <button id="submitJsonButton"  class="custom-file-upload">Submit</button>
+</div>
+
+<div>
+  <label for="fileInput" class="custom-file-upload">
+    Importer .dmn file:
+  </label>
+  <input type="file" id="fileInput" accept=".dmn" />
+
+</div>
+<div id="dmn-diagram-container"></div>
+<div id="generatedInputData">Copy the JSON object :   </div>
+<div id="evaluationResults" style="color: orange;"></div>
+
+  <script type="module" src="../dist/index.js"></script>
+  <script src="https://unpkg.com/dmn-js@14.7.1/dist/dmn-viewer.development.js"></script>
+
+</body>
+</html>
